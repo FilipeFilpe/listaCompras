@@ -1,0 +1,57 @@
+<h1>{{title}}</h1>
+
+Produto: <input type="text" [(ngModel)]="compra.produto">
+<br>
+Preço: <input type="text" [(ngModel)]="compra.preco">
+<br>
+Quantidade: <input type="text" [(ngModel)]="compra.quantidade">
+<br>
+Promoção: <input type="text" class="lowercase" [(ngModel)]="compra.promocao">
+<br>
+<button type="submit" (click)="add()">Inserir Produto</button>
+
+<!--<ul>
+  Produto | Preço | Quantidade
+  <li *ngFor="let item of compras">
+    {{item.produto}} | {{item.preco}} | {{item.quantidade}}
+  </li>
+</ul>-->
+
+<br>
+<br>
+
+<table>
+  <tr>
+    <th>Produto</th>
+    <th>Preço</th>
+    <th>Quantidade</th>
+    <th>Valor Total</th>
+    <th>Promoção</th>
+  </tr>
+  <tr *ngFor="let item of compras">
+    <td>
+        {{item.produto}}
+    </td>
+    <td>
+        {{item.preco}}
+    </td>
+    <td>
+        {{item.quantidade}} 
+    </td>
+    <td>
+      {{item.totalItem}}
+    </td>
+    <td [ngClass]="{'promocaoTrue':item.promocao == 'sim'}">
+        {{item.promocao}}
+    </td>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>Total:</th>
+    <td style="background-color:aquamarine">
+      {{total}}
+    </td>
+  </tr>
+</table>
