@@ -1,14 +1,27 @@
-<h1>{{title}}</h1>
+<h1 class="display-4">{{title}}</h1>
 
-Produto: <input type="text" [(ngModel)]="compra.produto">
-<br>
-Preço: <input type="text" [(ngModel)]="compra.preco">
-<br>
-Quantidade: <input type="text" [(ngModel)]="compra.quantidade">
-<br>
-Promoção: <input type="text" class="lowercase" [(ngModel)]="compra.promocao">
-<br>
-<button type="submit" (click)="add()">Inserir Produto</button>
+<div class="form-group">
+  <div class="row">
+    <div class="col-sm">
+      <label for="">Produto:</label>
+      <input class="form-control form-control-sm" type="text" [(ngModel)]="compra.produto">
+      <label for="">Quantidade:</label>
+      <input class="form-control form-control-sm" type="text" [(ngModel)]="compra.quantidade">
+    </div>
+    <div class="col-sm">
+      <label for="">Preço:</label>
+      <input class="form-control form-control-sm" type="text" [(ngModel)]="compra.preco">
+      <label for="">Promoção:</label>
+      <div class="form-check">
+        <input class="form-check-input" id="checkSim" [(ngModel)]="compra.promocao" type="checkbox" value="SIM">
+        <label class="form-check-label" for="checkSim">
+          SIM
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-dark btn-lg btn-block" type="submit" [alertasCompras]="compra" (click)="add()">Inserir Produto</button>
 
 <!--<ul>
   Produto | Preço | Quantidade
@@ -16,11 +29,8 @@ Promoção: <input type="text" class="lowercase" [(ngModel)]="compra.promocao">
     {{item.produto}} | {{item.preco}} | {{item.quantidade}}
   </li>
 </ul>-->
-
-<br>
-<br>
-
-<table>
+<hr class="my-4" class="hr">
+<table class="table table-dark">
   <tr>
     <th>Produto</th>
     <th>Preço</th>
@@ -30,28 +40,30 @@ Promoção: <input type="text" class="lowercase" [(ngModel)]="compra.promocao">
   </tr>
   <tr *ngFor="let item of compras">
     <td>
-        {{item.produto}}
+      {{item.produto}}
     </td>
     <td>
-        {{item.preco}}
+       {{item.preco | formatCurrency}}
     </td>
     <td>
-        {{item.quantidade}} 
+       {{item.quantidade}} 
     </td>
     <td>
-      {{item.totalItem}}
+      {{item.totalItem | formatCurrency}}
     </td>
-    <td [ngClass]="{'promocaoTrue':item.promocao == 'sim'}">
+    <td [ngClass]="{'promocaoTrue':item.promocao == true}">
         {{item.promocao}}
     </td>
   </tr>
-  <tr>
+  <tr class="resultados">
     <th></th>
-    <th></th>
-    <th></th>
+    <th>Data:</th>
+    <td>
+      {{data | date: 'dd/MM/yyyy hh:mm'}}
+    </td>
     <th>Total:</th>
-    <td style="background-color:aquamarine">
-      {{total}}
+    <td>
+      {{total | formatCurrency}}
     </td>
   </tr>
 </table>

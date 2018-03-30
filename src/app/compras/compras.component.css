@@ -1,6 +1,13 @@
 .promocaoTrue {
-    background-color: yellow;
+    background-color: seagreen;
 }
 .lowercase {
     text-transform: lowercase;
+}
+.resultados {
+    background-color:lightgray;
+    color: black;
+}
+.hr {
+    background-color: black;
 }

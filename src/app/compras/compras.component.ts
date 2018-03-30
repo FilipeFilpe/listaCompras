@@ -11,6 +11,7 @@ export class ComprasComponent {
   compras = [];
   totalItem = 0;
   total = 0;
+  data = new Date();
   compra:Compra = {produto:"", preco: 0, quantidade: 0, promocao:"", totalItem: 0};
 
   add() {
@@ -23,5 +24,7 @@ export class ComprasComponent {
     this.total += compra.totalItem;
     // Adiciona o PRODUTO na COMPRA
     this.compras.push(compra);
+    // Puxa a data atual do local
+    this.data.getTime();
   }
 }
