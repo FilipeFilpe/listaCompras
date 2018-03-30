@@ -2,6 +2,8 @@
 
 Uma aplicação simples para o meu aprendizado de Angular 4.
 
+![Print do App](listaCompras/src/app/lista1.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server
