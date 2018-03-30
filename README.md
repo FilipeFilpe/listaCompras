@@ -1,6 +1,7 @@
 # Lista de Compras
 
 Uma aplicação simples para o meu aprendizado de Angular 4.
+
 Um lista de compras. Suas funcionalidades estão espeficícadas logo a baixo em [Funcionalidades](https://github.com/FilipeFilpe/listaCompras#funcionalidades)
 
 ![Print um do App](https://github.com/FilipeFilpe/listaCompras/blob/master/src/app/tela1.PNG)
