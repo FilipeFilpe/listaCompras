@@ -1,33 +1,37 @@
 # Lista de Compras
 
 Uma aplicação simples para o meu aprendizado de Angular 4.
+Um lista de compras. Suas funcionalidades estão espeficícadas logo a baixo em [Funcionalidades](https://github.com/FilipeFilpe/listaCompras#funcionalidades)
 
 ![Print um do App](https://github.com/FilipeFilpe/listaCompras/blob/master/src/app/tela1.PNG)
 
 ![Print dois do App](https://github.com/FilipeFilpe/listaCompras/blob/master/src/app/tela2.PNG)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+Este projeto foi criado com o [Angular CLI](https://github.com/angular/angular-cli) versão 1.7.3.
 
-## Development server
+## Funcionalidades
+Futuramente aqui estará listada todas as funcionalidades desta aplicação de Angular 4.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Servidor de Desenvolvimento
+
+Execute `ng server` para roda o sevidor de desenvolvimento. Navegue para `http://localhost:4200/`. A aplicação recarrega automaticamente toda vez que há uma mudança em algum arquivo.
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Execute `ng generate component component-name` para criar um novo componente. Você pode usar também `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Execute `ng build` para dar build no projeto. Os artefatos do build estão armazenado no diretório `dist/`. Use o argumento `-prod` para dar build em produção.
 
-## Running unit tests
+## Execução de testes unitários
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Execute `ng test` para rodae testes unitários via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Execução de testes ponta a ponta
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Execute `ng e2e` para rodar o testes de ponta a ponta via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Ajuda adicional
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Para obter mais ajuda com o Angular CLI execute `ng help` ou vá até [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
