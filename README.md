@@ -2,7 +2,9 @@
 
 Uma aplicação simples para o meu aprendizado de Angular 4.
 
-![Print do App](listaCompras/src/app/lista1.png)
+![Print um do App](https://github.com/FilipeFilpe/listaCompras/blob/master/src/app/tela1.PNG)
+
+![Print dois do App](https://github.com/FilipeFilpe/listaCompras/blob/master/src/app/tela2.PNG)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
