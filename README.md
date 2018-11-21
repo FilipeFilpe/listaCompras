@@ -17,6 +17,9 @@ Futuramente aqui estará listada todas as funcionalidades desta aplicação de A
 
 Execute `ng server` para roda o sevidor de desenvolvimento. Navegue para `http://localhost:4200/`. A aplicação recarrega automaticamente toda vez que há uma mudança em algum arquivo.
 
+## Serviço Json
+Dentro da pasta DB executar o seguinte comando para usar o arquivo json como uma api REST `json-server --watch compras.json`.
+
 ## Code scaffolding
 
 Execute `ng generate component component-name` para criar um novo componente. Você pode usar também `ng generate directive|pipe|service|class|guard|interface|enum|module`.
