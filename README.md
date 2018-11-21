@@ -11,7 +11,14 @@ Um lista de compras. Suas funcionalidades estão espeficícadas logo a baixo em 
 Este projeto foi criado com o [Angular CLI](https://github.com/angular/angular-cli) versão 1.7.3.
 
 ## Funcionalidades
-Futuramente aqui estará listada todas as funcionalidades desta aplicação de Angular 4.
+O sistema conta com as funções básicas de CRUD (Criar, Ler, Modificar e Exlcuir).
+
+### Listar
+Lista todas as compras do banco.
+### Adicionar
+Adicionar um item a lista de compras.
+### Excluir
+Excluir um item da lista de compras.
 
 ## Servidor de Desenvolvimento
 
