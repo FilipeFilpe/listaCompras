@@ -1,3 +1,5 @@
+import { HttpClientModule } from '@angular/common/http';
+import { ComprasService } from './compras/compras.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -17,9 +19,10 @@ import { AlertasComprasDirective } from './alertas-compras.directive';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ComprasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

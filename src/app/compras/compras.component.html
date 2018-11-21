@@ -6,11 +6,11 @@
       <label for="">Produto:</label>
       <input class="form-control form-control-sm" type="text" [(ngModel)]="compra.produto">
       <label for="">Quantidade:</label>
-      <input class="form-control form-control-sm" type="text" [(ngModel)]="compra.quantidade">
+      <input class="form-control form-control-sm" type="number" [(ngModel)]="compra.quantidade">
     </div>
     <div class="col-sm">
       <label for="">Preço:</label>
-      <input class="form-control form-control-sm" type="text" [(ngModel)]="compra.preco">
+      <input class="form-control form-control-sm" type="number" step="0.01" [(ngModel)]="compra.preco">
       <label for="">Promoção:</label>
       <div class="form-check">
         <input class="form-check-input" id="checkSim" [(ngModel)]="compra.promocao" type="checkbox" value="SIM">
@@ -23,12 +23,6 @@
 </div>
 <button class="btn btn-dark btn-lg btn-block" type="submit" [alertasCompras]="compra" (click)="add()">Inserir Produto</button>
 
-<!--<ul>
-  Produto | Preço | Quantidade
-  <li *ngFor="let item of compras">
-    {{item.produto}} | {{item.preco}} | {{item.quantidade}}
-  </li>
-</ul>-->
 <hr class="my-4" class="hr">
 <table class="table table-dark">
   <tr>
@@ -51,8 +45,14 @@
     <td>
       {{item.totalItem | formatCurrency}}
     </td>
-    <td [ngClass]="{'promocaoTrue':item.promocao == true}">
-        {{item.promocao}}
+    <td [ngClass]="{'promocaoTrue':item.promocao == true}" *ngIf="item.promocao == true" >
+        SIM
+    </td>
+    <td *ngIf="item.promocao != true" >
+        NÃO
+    </td>
+    <td>
+      <button class="btn btn-danger" (click)="excluir(item.id)">Excluir Item </button>
     </td>
   </tr>
   <tr class="resultados">
@@ -61,6 +61,7 @@
     <td>
       {{data | date: 'dd/MM/yyyy hh:mm'}}
     </td>
+    <td></td>
     <th>Total:</th>
     <td>
       {{total | formatCurrency}}
