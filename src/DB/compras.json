@@ -1,20 +1,20 @@
 {
   "compras": [
     {
-      "id": 1,
-      "produto": "Arroz",
-      "preco": 5.5,
-      "quantidade": 2,
-      "promocao": true,
-      "totalItem": 11
-    },
-    {
-      "produto": "Sorvete",
-      "preco": 3,
+      "id": 2,
+      "produto": "Coca-cola",
+      "preco": 5.25,
       "quantidade": 3,
       "promocao": true,
-      "totalItem": 9,
-      "id": 6
+      "totalItem": 15.75
+    },
+    {
+      "id": 4,
+      "produto": "Carne de Sol",
+      "preco": 15,
+      "quantidade": 2,
+      "promocao": "",
+      "totalItem": 30
     }
   ]
 }

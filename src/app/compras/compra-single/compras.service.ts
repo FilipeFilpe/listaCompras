@@ -1,4 +1,4 @@
-import { Compra } from './../compra';
+import { Compra } from '../../compra';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -10,6 +10,9 @@ export class ComprasService {
 
   getCompras() {
     return this.http.get<Compra[]>(this.url);
+  }
+  getCompra(itemId) {
+    return this.http.get<Compra>(this.url+"/"+itemId);    
   }
   setCompra(compra: Compra){
     return this.http.post<Compra>(this.url, compra);
